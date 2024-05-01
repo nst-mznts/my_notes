@@ -1,0 +1,18 @@
+@import '../../sass/abstract/constants';
+@import '../../sass/abstract/mixins';
+@import '../../sass/abstract/placeholders';
+
+.unordered-list-form {
+    width: 100%;
+    display: flex;
+    padding: 10px 0 10px 10px;
+}
+
+.unordered-list-input {
+    @include border(none);
+	padding: 2px;
+	font-family: "Roboto", sans-serif;
+    @include font(normal, 200, 1.6rem, $color-additional);
+	outline: none;
+	@extend %width100;
+}

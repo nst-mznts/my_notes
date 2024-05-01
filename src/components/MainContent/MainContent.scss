@@ -1,0 +1,39 @@
+@import '../../sass/abstract/constants';
+@import '../../sass/abstract/mixins';
+@import '../../sass/abstract/placeholders';
+
+.main {
+    background-color: $color-secondary;
+    width: 600px;
+    padding: 20px 0;
+    @extend %shadow;
+}
+  
+.wrapper {
+    @extend %width100;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+.main-header {
+    @include flex(row, space-between, center);
+    margin-bottom: 20px;
+}
+  
+.note-button {
+    @include border-radius(50%);
+    background-color: $color-icons;
+    @include border(none);
+    color: $color-light;
+    @include flex(row, center, center);
+    @extend %pointer;
+}
+  
+.add-button {
+    width: 30px;
+    height: 30px;
+}
+  
+.main-content {
+    @extend %width100;
+}

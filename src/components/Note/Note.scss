@@ -1,0 +1,90 @@
+@import '../../sass/abstract/constants';
+@import '../../sass/abstract/mixins';
+@import '../../sass/abstract/placeholders';
+
+.note {
+    @extend %width100;
+    height: $note-height;
+    background-color: $color-light;
+    @include flex(row, space-between, flex-start);
+}
+  
+.note-indicator {
+    width: 20px;
+    height: 100%;
+    list-style-type: none;
+}
+  
+.indicator-color {
+    @extend %width100;
+}
+  
+.note-icons {
+    width: 86px;
+    @include flex(row, space-between, center);
+    column-gap: 8px;
+    padding: 14px;
+}
+  
+.note-icons-button {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    opacity: 1;
+    @include flex(row, center, center);
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+  
+.note-content {
+    @include flex(column, center, flex-start);
+    row-gap: 8px;
+    width: 420px;
+    height: $note-height;
+    padding: 10px;
+    @extend %pointer;
+    overflow: hidden;
+}
+
+.note-field {
+    font-family: "Roboto", sans-serif;
+    word-break: break-all;
+    outline: none;
+    @include border(none);
+    @extend %width100;
+}
+  
+.note-title {
+    @include font(normal, 500, 2.2rem, $color-text);
+}
+  
+.note-text {
+    @include font(normal, 200, 1.6rem, $color-additional);
+    overflow: hidden;
+    white-space: pre-wrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+  
+.star-icon * {
+    fill: $color-icons;
+    stroke: $color-light;
+    stroke-width: 50px;
+}
+
+.unordered-list {
+    @extend %width100;
+    overflow: hidden;
+    list-style-position: inside;
+    height: 54px;
+    & li {
+        @include font(normal, 200, 1.6rem, $color-additional);
+    }
+}
+
+.hidden {
+    display: none;
+}
