@@ -56,7 +56,7 @@ Run the following command to install the necessary packages listed in package.js
 In the project directory, you can run:
 
    ```bash
-   npm start
+   npm run start
    ```
 
 This command runs the app in the development mode.
