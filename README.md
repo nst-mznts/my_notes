@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# 📝 My notes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+This is a React application for creating, storing and editing notes. Additionally, users can add tags to notes and use the search bar to filter notes based on keywords.
 
-## Available Scripts
+## Screenshots
+ ![project image](https://github.com/nst-mznts/my_notes/blob/dev/public/My_notes.png)
+ 
+## Tech Stack
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+
+## Features
+
+- **Tags Functionality**: You can add tags to your notes. When creating or editing a note, you can choose 1, 2, or all 3 available tags. You can also skip adding tags if you want.
+- **Filter by Tags**: The app lets you filter notes based on their tags.
+- **Search by Words**: You can filter notes using a search bar by typing words.
+- **Favorites and Trash**: You can add notes to favorites or move them to the trash.
+- **Modal Window**: The same component is used for creating a new note and editing an existing one.
+- **Responsive Design**: The app works well and looks good on different screen sizes.
+
+## Requirements
+
+Before you can run the project, make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (Recommended version: v14 or higher)
+- [npm](https://www.npmjs.com/) (Comes with Node.js)
+
+Once you have Node.js and npm installed, you can set up the project.
+
+## Setup
+
+Clone the repository
+
+  ```bash
+   git clone https://github.com/nst-mznts/my_notes.git -b dev
+   cd my_notes
+   ```
+
+## Install the project dependencies
+
+Run the following command to install the necessary packages listed in package.json:
+
+   ```bash
+   npm install
+   ```
+
+# Run the project
 
 In the project directory, you can run:
 
-### `npm start`
+   ```bash
+   npm start
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This command runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

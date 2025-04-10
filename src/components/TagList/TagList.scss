@@ -42,3 +42,10 @@
     @include border(1px solid $color-icons);
     background-color: $color-icons;
 }
+
+
+@media (max-width: 640px) {
+    .tag {
+        font-size: 1.2rem;
+    }
+}

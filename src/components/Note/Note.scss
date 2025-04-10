@@ -61,7 +61,7 @@
 }
   
 .note-text {
-    @include font(normal, 200, 1.6rem, $color-additional);
+    @include font(normal, 200, 1.4rem, $color-additional);
     overflow: hidden;
     white-space: pre-wrap;
     display: -webkit-box;
@@ -81,10 +81,25 @@
     list-style-position: inside;
     height: 54px;
     & li {
-        @include font(normal, 200, 1.6rem, $color-additional);
+        @include font(normal, 200, 1.4rem, $color-additional);
     }
 }
 
 .hidden {
     display: none;
+}
+
+@media (max-width: 640px) {
+    .note-title {
+        font-size: 1.8rem;
+    }
+
+    .note-text {
+        font-size: 1.2rem;
+        -webkit-line-clamp: 2;
+    }
+
+    .unordered-list li {
+        font-size: 1.2rem;
+    }
 }

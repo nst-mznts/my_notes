@@ -42,3 +42,28 @@
     background-color: $color-icons;
     visibility: hidden;
 }
+
+@media (max-width: 1024px) {
+  .sidebar-navigation {
+      width: 600px;
+      padding: 0 20px;
+  }
+
+  .navigation {
+    @extend %width100;
+    list-style-type: none;
+    @include flex(row, space-between, flex-start);
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar-navigation {
+    width: 300px;
+    padding: 0 10px;
+  }
+
+  .navigation-link {
+    font-size: 1.2rem;
+    column-gap: 4px;
+  }
+}

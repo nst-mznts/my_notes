@@ -22,3 +22,9 @@
 .search input:focus {
     outline: none;
 }
+
+@media (max-width: 1024px) {
+    .search {
+        width: 100%;
+    }
+}

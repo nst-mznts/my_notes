@@ -26,8 +26,8 @@
 
 .popup__bg {
     @extend %width100;
-    height: 100%;
-    @include flex(column, flex-start, center);
+    height: 100vh;
+    @include flex(column, center, center);
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 70;
     position: absolute;
@@ -116,5 +116,36 @@
         font-family: "Roboto", sans-serif;
         @include font(normal, 200, 1.6rem, $color-text);
         outline: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .popup {
+        width: 300px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .content {
+        font-size: 1.2rem;
+    }
+
+    .popup-unordered-list input {
+        font-size: 1.2rem;
+    }
+
+    .unordered-list-input {
+        font-size: 1.2rem;
+    }
+
+    input::placeholder {
+        font-size: 1.2rem;
+    }
+
+    .popup-tags {
+        @include flex(column, space-between, center);
+        row-gap: 20px;
     }
 }

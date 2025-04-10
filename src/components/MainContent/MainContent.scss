@@ -37,3 +37,19 @@
 .main-content {
     @extend %width100;
 }
+
+@media (max-width: 640px) {
+    .main {
+        width: 300px;
+    }
+
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    .main-header {
+        @include flex(column,space-between, center);
+        row-gap: 20px;
+        margin-bottom: 20px;
+    }
+}
