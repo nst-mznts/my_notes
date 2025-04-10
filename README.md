@@ -4,7 +4,11 @@
 This is a React application for creating, storing and editing notes. Additionally, users can add tags to notes and use the search bar to filter notes based on keywords.
 
 ## Screenshots
- ![project image](https://github.com/nst-mznts/my_notes/blob/dev/public/My_notes.png)
+ ![project image large screen](https://github.com/nst-mznts/my_notes/blob/dev/public/my_notes_large.png)
+
+ ![project image medium screen](https://github.com/nst-mznts/my_notes/blob/dev/public/my_notes_medium.png)
+
+ ![project image small screen](https://github.com/nst-mznts/my_notes/blob/dev/public/my_notes_small.png)
  
 ## Tech Stack
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
